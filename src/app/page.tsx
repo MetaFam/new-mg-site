@@ -36,7 +36,7 @@ const cards = [
     },
   },
   {
-    description: "NextMeta media content of MG",
+    description: "Media outlet of MG",
     title: "NextMeta",
     src: NextMetaLogo,
     ctaText: "Listen",
@@ -44,7 +44,9 @@ const cards = [
     content: () => {
       return (
         <p>
-          NextMeta is media outlet for MG... Collect on pods.media..
+          NextMeta is a podcast and a newsletter about onchain economies, coordination and the bigger picture.
+        <p>&nbsp;</p>
+        <p>Collect on pods.media..</p>
         </p>
       );
     },
@@ -68,7 +70,7 @@ const cards = [
 function Home() {
   return (
     <BackgroundGradientAnimation className="-z-100 pointer-events-auto">
-      <Header className="glass sticky top-0 z-10" />
+      <Header className="glass sticky top-0 z-10 m-20" />
       <ExpandableCards {...{ cards }} className="pt-20"/>
     </BackgroundGradientAnimation>
   );
