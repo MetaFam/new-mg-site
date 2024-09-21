@@ -21,7 +21,7 @@ export type Card = {
 
 const cards = [
   {
-    description: "MetaGame playbooks and MetaLibrary",
+    description: "Learn & Earn Soulbound NFTs",
     title: "dAcademy",
     src: MGLogoAnimate,
     contain: true,
@@ -36,7 +36,7 @@ const cards = [
     },
   },
   {
-    description: "Media outlet of MG",
+    description: "Podcasts, Newsletter, & moar!",
     title: "NextMeta",
     src: NextMetaLogo,
     ctaText: "Listen",
