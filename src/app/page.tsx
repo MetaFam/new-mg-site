@@ -11,12 +11,12 @@ const cards = [
     description: "NextMeta media content of MG",
     title: "NextMeta",
     src: NextMetaLogo,
-    ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaText: "Listen",
+    ctaLink: "https://pods.media/nextmeta",
     content: () => {
       return (
         <p>
-          NextMeta is blah blah
+          NextMeta is media outlet for MG... Collect on pods.media..
         </p>
       );
     },
@@ -27,12 +27,12 @@ const cards = [
     title: "Guilds",
     src: MGLogo,
     contain: true,
-    ctaText: "Visit",
-    ctaLink: "https://enter.metagame.wtf",
+    ctaText: "Join Frens",
+    ctaLink: "https://metagame.wtf",
     content: () => {
       return (
         <p>
-          MG is the best
+          MG is the best ...
         </p>
       );
     },
@@ -42,12 +42,12 @@ const cards = [
     title: "dAcademy",
     src: MGLogoAnimate,
     contain: true,
-    ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaText: "Learn",
+    ctaLink: "https://metagame.wtf/academy",
     content: () => {
       return (
         <p>
-          dAcademy is for playbooks
+          dAcademy is for playbooks ...
         </p>
       );
     },
