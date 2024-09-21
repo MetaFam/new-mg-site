@@ -4,7 +4,7 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
-export default function ExpandableCardDemo({ cards }) {
+export default function ExpandableCardDemo({ cards, className }) {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
   );
@@ -31,7 +31,7 @@ export default function ExpandableCardDemo({ cards }) {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <>
+    <section {...{ className }}> 
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
@@ -68,7 +68,7 @@ export default function ExpandableCardDemo({ cards }) {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-purple-300 dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -105,7 +105,7 @@ export default function ExpandableCardDemo({ cards }) {
                     exit={{ opacity: 0 }}
                     href={active.ctaLink}
                     target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
+                    className="px-4 py-3 text-sm rounded-full font-bold bg-purple-700 text-white"
                   >
                     {active.ctaText}
                   </motion.a>
@@ -134,7 +134,7 @@ export default function ExpandableCardDemo({ cards }) {
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col  hover:bg-[#706ed1] dark:hover:bg-purple-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col  w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -149,13 +149,13 @@ export default function ExpandableCardDemo({ cards }) {
               <div className="flex justify-center items-center flex-col">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left text-base"
+                  className="font-medium text-[#5cdcc6] dark:text-neutral-200 text-center md:text-left text-base"
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"
+                  className="text-white dark:text-neutral-400 text-center md:text-left text-base"
                 >
                   {card.description}
                 </motion.p>
@@ -164,7 +164,7 @@ export default function ExpandableCardDemo({ cards }) {
           </motion.div>
         ))}
       </ul>
-    </>
+    </section>
   );
 }
 

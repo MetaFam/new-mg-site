@@ -2,6 +2,7 @@
 import NextMetaLogo from '../assets/nextmeta-logo.webp';
 import MGLogoAnimate from '../assets/mg-logo.gif';
 import MGLogo from '../assets/mglogo.webp';
+import Footer from '../components/ui/footer';
 import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation"
 import ExpandableCards from '../components/blocks/expandable-card-grid';
 
@@ -55,8 +56,9 @@ const cards = [
 ];
 export function Home() {
   return (
-    <BackgroundGradientAnimation className="-z-100">
-      <ExpandableCards {...{ cards }}/>
+    <BackgroundGradientAnimation className="-z-100 pointer-events-auto">
+      <ExpandableCards {...{ cards }} className="pt-20"/>
+      <Footer/>
     </BackgroundGradientAnimation>
   );
 }
