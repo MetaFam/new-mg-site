@@ -2,7 +2,6 @@
 import NextMetaLogo from '../assets/nextmeta-logo.webp';
 import MGLogoAnimate from '../assets/mg-logo.gif';
 import MGLogo from '../assets/mglogo.webp';
-import Footer from '../components/ui/footer';
 import Header from '../components/ui/header';
 import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation"
 import ExpandableCards from '../components/blocks/expandable-card-grid';
