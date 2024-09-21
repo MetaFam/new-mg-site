@@ -5,7 +5,19 @@ import MGLogo from '../assets/mglogo.webp';
 import Footer from '../components/ui/footer';
 import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation"
 import ExpandableCards from '../components/blocks/expandable-card-grid';
+import { StaticImageData } from 'next/image';
+import { ReactNode } from 'react';
 
+export type Card = {
+  description: string
+  title: string
+  src: StaticImageData
+  ctaText: string
+  ctaLink: string
+  content: () => ReactNode
+  contain?: boolean
+
+}
 
 const cards = [
   {
@@ -54,7 +66,7 @@ const cards = [
     },
   },
 ];
-export function Home() {
+function Home() {
   return (
     <BackgroundGradientAnimation className="-z-100 pointer-events-auto">
       <ExpandableCards {...{ cards }} className="pt-20"/>
