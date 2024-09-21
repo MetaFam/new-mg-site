@@ -52,7 +52,7 @@ const cards = [
     },
   },
   {
-    description: "MetaGame",
+    description: "Frens of MetaGame",
     title: "Guilds",
     src: MGLogo,
     contain: true,
@@ -61,7 +61,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          MG is the best ...
+          Discover more Guilds in the greater family.
         </p>
       );
     },
