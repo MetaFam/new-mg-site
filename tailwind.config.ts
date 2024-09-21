@@ -15,6 +15,10 @@ const config = {
       },
     },
     extend: {
+      glass: {
+        backdropFilter: 'blur(10px) saturate(180%) contrast(100%)',
+        backgroundColor: 'rgba(255, 255, 255, 0.2)',
+      },
       animation: {
         first: "moveVertical 30s ease infinite",
         second: "moveInCircle 20s reverse infinite",

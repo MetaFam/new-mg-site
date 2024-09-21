@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "gh:publish": "gh-pages --dist out/ --cname new.metagame.wtf" 
+    "gh:publish": "gh-pages --dist out/ --cname new.metagame.wtf --nojekyll" 
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
