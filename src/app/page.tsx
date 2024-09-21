@@ -30,7 +30,9 @@ const cards = [
     content: () => {
       return (
         <p>
-          dAcademy is for playbooks ...
+          dAcademy helps you level up in the MetaGame.  We have a library of playbooks stored on IPFS.  As you complete them and learn, you can claim a Soulbound NFT on Optimism to showcase your collection of knowledge.
+        <p>&nbsp;</p>
+        <p>Start at the surface or prepare to dig deep.</p>
         </p>
       );
     },
@@ -47,6 +49,7 @@ const cards = [
           NextMeta is a podcast and a newsletter about onchain economies, coordination and the bigger picture.
         <p>&nbsp;</p>
         <p>Collect on pods.media..</p>
+        <p>&nbsp;</p>
         </p>
       );
     },
