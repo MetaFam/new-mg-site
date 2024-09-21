@@ -71,7 +71,6 @@ function Home() {
     <BackgroundGradientAnimation className="-z-100 pointer-events-auto">
       <Header className="glass sticky top-0 z-10" />
       <ExpandableCards {...{ cards }} className="pt-20"/>
-      <Footer/>
     </BackgroundGradientAnimation>
   );
 }
