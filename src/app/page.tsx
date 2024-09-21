@@ -70,7 +70,7 @@ const cards = [
 function Home() {
   return (
     <BackgroundGradientAnimation className="-z-100 pointer-events-auto">
-      <Header className="glass sticky top-0 z-10 m-20" />
+      <Header/>
       <ExpandableCards {...{ cards }} className="pt-20 m-8"/>
     </BackgroundGradientAnimation>
   );
