@@ -71,7 +71,7 @@ export default function ExpandableCardDemo(
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-[#6b69cc] dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-[#6b69cc] border-2 border-lime-200 dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -81,7 +81,7 @@ export default function ExpandableCardDemo(
                   height={400}
                   src={active.src}
                   alt={active.title}
-                  className={`w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-center object-top ${active.contain ? "object-contain" : "object-cover"}`}
+                  className={`my-6 w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-center object-top ${active.contain ? "object-contain" : "object-cover"}`}
                 />
               </motion.div>
 
@@ -109,7 +109,7 @@ export default function ExpandableCardDemo(
                     exit={{ opacity: 0 }}
                     href={active.ctaLink}
                     target="_blank"
-                    className="px-4 py-3 text-sm rounded-md font-bold bg-purple-700 text-white hover:bg-[#5adfca]"
+                    className="px-4 py-3 text-sm rounded-md font-semibold bg-purple-700 border-2 border-[#17B79C] mr-2 mt-1 text-white hover:bg-[#5adfca] hover:text-black"
                   >
                     {active.ctaText}
                   </motion.a>
@@ -138,7 +138,7 @@ export default function ExpandableCardDemo(
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col  hover:bg-[#706ed1] dark:hover:bg-purple-800 rounded-xl cursor-pointer"
+            className="p-2 flex flex-col  hover:bg-[#706ed1] hover:border-2 hover:border-lime-200 dark:hover:bg-purple-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col  w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
