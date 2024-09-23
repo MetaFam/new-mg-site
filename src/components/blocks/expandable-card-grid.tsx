@@ -120,7 +120,7 @@ export default function ExpandableCardDemo(
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-white text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-white text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:scroll] [-webkit-overflow-scrolling:touch]"
                   >
                     {typeof active.content === "function"
                       ? active.content()
@@ -138,7 +138,7 @@ export default function ExpandableCardDemo(
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
             onClick={() => setActive(card)}
-            className="p-2 flex flex-col  hover:bg-[#706ed1] hover:border-2 hover:border-lime-200 dark:hover:bg-purple-800 rounded-xl cursor-pointer"
+            className="p-2 flex flex-col hover:bg-[#706ed1] hover:border-2 hover:border-lime-200 dark:hover:bg-purple-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col  w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
